@@ -1,4 +1,4 @@
-const run = require("./voting_system");
+const VotingSystem = require("./voting_system");
 
 const checkArguments = () => {
     // Check for invalid usage
@@ -8,9 +8,9 @@ const checkArguments = () => {
     }
 };
 
-const main = async () => {
+const main = () => {
     checkArguments();
-    run();
+    VotingSystem.run();
 }
 
 main();
